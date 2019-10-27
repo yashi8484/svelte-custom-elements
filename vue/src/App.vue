@@ -32,8 +32,8 @@ export default {
     };
   },
   methods: {
-    handleButtonOnClick(e) {
-      alert("button clicked!");
+    handleButtonOnClick() {
+      console.log("button clicked!");
     }
   }
 };

@@ -3,8 +3,8 @@ import "./app.css";
 import "../public/svelte-components";
 
 export const App = props => {
-  function handleButtonOnClick(e) {
-    alert("button clicked!");
+  function handleButtonOnClick() {
+    console.log("button clicked!");
   }
 
   return (
