@@ -11,10 +11,12 @@
     font-size: 1rem;
     color: #ffffff;
     background-color: #0074d9;
+    /* background-color: #2ccc3f; */
   }
   .button:hover {
     cursor: pointer;
     background-color: #0082f4;
+    /* background-color: #52da62; */
   }
 </style>
 

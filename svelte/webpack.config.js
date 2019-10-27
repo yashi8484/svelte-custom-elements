@@ -18,7 +18,7 @@ module.exports = {
   output: {
     path: __dirname + "/public",
     // 開発時(webpack-dev-server)は実ファイルではなくメモリ上のファイルを見ることに注意
-    filename: "svelte-components.js"
+    filename: "svelte-elements.js"
   },
   module: {
     rules: [

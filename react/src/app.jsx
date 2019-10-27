@@ -1,6 +1,6 @@
 import React from "react";
 import "./app.css";
-import "../public/svelte-components";
+import "../public/svelte-elements";
 
 export const App = props => {
   function handleButtonOnClick() {

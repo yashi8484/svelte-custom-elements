@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import "../public/svelte-components";
+import "../public/svelte-elements";
 
 export default {
   data() {

@@ -1,1 +1,1 @@
-# svelte-shared-components
+# svelte-custom-elements
