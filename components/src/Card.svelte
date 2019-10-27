@@ -18,6 +18,10 @@
   .card-title {
     font-weight: bold;
     font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  .card-body {
+    margin-bottom: 12px;
   }
 </style>
 
@@ -25,5 +29,6 @@
 
 <div class="card">
   <div class="card-title">{title}</div>
-  <div>{message}</div>
+  <div class="card-body">{message}</div>
+  <slot name="footer" />
 </div>
