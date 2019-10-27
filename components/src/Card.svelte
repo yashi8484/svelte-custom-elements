@@ -1,5 +1,6 @@
 <script>
-  export let title, message;
+  export let title = "Svelte Card";
+  export let message = "This is card component created by svelte";
 </script>
 
 <style>
