@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>This is Svelte x {{ name }} page</h1>
+    <h1>Svelte x {{ name }}</h1>
     <div class="content-wrapper">
       <template v-for="card in cards">
         <svelte-card
@@ -27,7 +27,7 @@ export default {
       name: "Vue",
       cards: [...Array(10)].map((_, i) => ({
         title: `Card in Vue ${i + 1}`,
-        message: `This is svelte-card element ${i + 1}`
+        message: `svelte-card element ${i + 1}`
       }))
     };
   },
