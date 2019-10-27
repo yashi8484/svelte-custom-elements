@@ -4,8 +4,15 @@
 
 <style>
   .card {
-    border: 1px solid #333;
-    padding: 10px;
+    box-sizing: border-box;
+    width: 300px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin: 0 12px 12px 0;
+    padding: 12px 24px;
+  }
+  .card > * {
+    color: #333;
   }
   .card-title {
     font-weight: bold;
