@@ -7,7 +7,12 @@
           :title="card.title"
           :message="card.message"
           :key="card.title"
-        />
+        >
+          <svelte-button
+            slot="footer"
+            @click="handleButtonOnClick"
+          ></svelte-button>
+        </svelte-card>
       </template>
     </div>
   </div>
@@ -25,6 +30,11 @@ export default {
         message: `This is svelte-card element ${i + 1}`
       }))
     };
+  },
+  methods: {
+    handleButtonOnClick(e) {
+      alert("button clicked!");
+    }
   }
 };
 </script>
