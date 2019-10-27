@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --content-base public --port 1111",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack && yarn copy",
+    "copy": "cp public/svelte-components.js ../react/public/svelte-components.js && cp public/svelte-components.js ../vue/public/svelte-components.js"
   },
   "devDependencies": {
     "css-loader": "^3.2.0",
