@@ -16,9 +16,9 @@ module.exports = {
     mainFields: ["svelte", "browser", "module", "main"]
   },
   output: {
-    path: "/dist",
-    filename: "[name].js",
-    chunkFilename: "[name].[id].js"
+    path: __dirname + "/public",
+    // 開発時(webpack-dev-server)は実ファイルではなくメモリ上のファイルを見ることに注意
+    filename: "svelte-components.js"
   },
   module: {
     rules: [
@@ -28,7 +28,8 @@ module.exports = {
           loader: "svelte-loader",
           options: {
             emitCss: true,
-            hotReload: true
+            hotReload: true,
+            customElement: true
           }
         }
       },
