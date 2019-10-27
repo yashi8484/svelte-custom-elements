@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel public/index.html"
+    "dev": "parcel public/index.html --port 2222"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
