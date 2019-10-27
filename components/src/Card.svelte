@@ -1,6 +1,11 @@
 <script>
   export let title = "Svelte Card";
   export let message = "This is card component created by svelte";
+  let selected = false;
+
+  function handleOnClick() {
+    selected = !selected;
+  }
 </script>
 
 <style>
@@ -12,8 +17,16 @@
     margin: 0 12px 12px 0;
     padding: 12px 24px;
   }
+  .card:hover {
+    cursor: pointer;
+  }
   .card > * {
     color: #333;
+  }
+  .card.selected,
+  .card.selected > * {
+    color: #fff;
+    background-color: #333;
   }
   .card-title {
     font-weight: bold;
@@ -27,7 +40,7 @@
 
 <svelte:options tag="svelte-card" />
 
-<div class="card">
+<div class="card" class:selected on:click={handleOnClick}>
   <div class="card-title">{title}</div>
   <div class="card-body">{message}</div>
   <slot name="footer" />
