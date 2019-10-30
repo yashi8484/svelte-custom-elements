@@ -1,7 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.jsx",
   "license": "MIT",
   "scripts": {
     "dev": "parcel public/index.html --port 2222"
