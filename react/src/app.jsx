@@ -5,7 +5,7 @@ import "../public/svelte-elements";
 export const App = props => {
   // Vue側とコードを似せるために記述
   const cards = [...Array(10)].map((_, i) => ({
-    title: `Card in Vue ${i + 1}`,
+    title: `Card in React ${i + 1}`,
     message: `svelte-card element ${i + 1}`
   }));
 
