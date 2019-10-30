@@ -3,11 +3,7 @@
     <h1>Svelte x {{ name }}</h1>
     <div class="content-wrapper">
       <template v-for="card in cards">
-        <svelte-card
-          :title="card.title"
-          :message="card.message"
-          :key="card.title"
-        >
+        <svelte-card :title="card.title" :message="card.message" :key="card.id">
           <svelte-button
             slot="footer"
             @click="handleButtonOnClick"
@@ -26,6 +22,7 @@ export default {
     return {
       name: "Vue",
       cards: [...Array(10)].map((_, i) => ({
+        id: i,
         title: `Card in Vue ${i + 1}`,
         message: `svelte-card element ${i + 1}`
       }))
