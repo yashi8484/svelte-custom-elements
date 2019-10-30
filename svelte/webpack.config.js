@@ -26,6 +26,7 @@ module.exports = {
         test: /\.svelte$/,
         use: {
           loader: "svelte-loader",
+          // https://svelte.dev/docs#svelte_compile
           options: {
             emitCss: true,
             hotReload: true,
